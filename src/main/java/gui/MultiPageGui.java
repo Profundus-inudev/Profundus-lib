@@ -73,8 +73,9 @@ public class MultiPageGui extends Gui {
      * @deprecated このメソッドは無効です。
      */
     @Override
+    @Deprecated
     public void addItem(MenuItem menuItem, int x, int y) {
-        plugin.getLogger().info("MultiPageGuiではaddItemは無効です");
+        plugin.getLogger().severe("MultiPageGuiではaddItemは無効です");
     }
 
     @Override
