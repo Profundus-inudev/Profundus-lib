@@ -40,6 +40,7 @@ public class MultiPageGui extends Gui {
      * コンストラクタ
      *
      * @param title GUIのタイトル
+     * @param plugin GUIを開くプラグイン
      */
     public MultiPageGui(String title, JavaPlugin plugin) {
         super(title,plugin);

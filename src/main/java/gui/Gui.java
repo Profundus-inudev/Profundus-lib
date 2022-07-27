@@ -45,6 +45,9 @@ public class Gui implements Listener {
     @Setter
     private List<PosMenuItem> menuItems = new ArrayList<>();
 
+    /**
+     * 呼び出し元のプラグイン
+     */
     protected final JavaPlugin plugin;
 
     /**
