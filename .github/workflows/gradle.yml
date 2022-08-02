@@ -22,6 +22,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
+    # Setup gcloud CLI
+    - uses: google-github-actions/setup-gcloud@v0.6.0
+      with:
+        service_account_key: ${{ secrets.GKE_SA_KEY_DEV }}
+        project_id: ${{ secrets.GKE_PROJECT_DEV }}
+
     - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
@@ -39,5 +46,3 @@ jobs:
     - name: Publish package
       if: github.ref == 'refs/heads/master'
       run: gradle publish
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
