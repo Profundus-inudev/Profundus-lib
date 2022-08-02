@@ -4,7 +4,7 @@ plugins {
     id "com.google.cloud.artifactregistry.gradle-plugin" version "2.1.5"
 }
 
-group 'tech.inu-dev.profundus'
+group 'tech.inudev.profundus'
 version '0.0.1-SNAPSHOT'
 
 repositories {
