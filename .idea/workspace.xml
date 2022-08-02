@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="76fbd183-c9aa-4f00-a0cf-0f05e657bd64" name="変更" comment="group nameを変更">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,6 +213,7 @@
       <workItem from="1658904837951" duration="2217000" />
       <workItem from="1658914289634" duration="2101000" />
       <workItem from="1659237875870" duration="18371000" />
+      <workItem from="1659442713809" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="色々追加&amp;github packageの設定">
       <created>1658908349354</created>
@@ -278,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659442421889</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="group nameを変更">
+      <created>1659442720367</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1659442720367</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
