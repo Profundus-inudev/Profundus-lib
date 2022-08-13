@@ -1,45 +1,42 @@
-package config;
+package tech.inudev.profundus.profundusLib.config;
 
 import lombok.Getter;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
 
 /**
- * config.ymlファイルを扱いやすくするために作られたHandler
+ * tech.inudev.profundus.config.ymlファイルを扱いやすくするために作られたHandler
  *
  * @author tererun
  */
-public class ConfigHandler {
+abstract public class BaseConfigHandler {
 
-    private final Plugin plugin;
-    private final FileConfiguration config;
+    protected final Plugin plugin;
+    protected final FileConfiguration config;
 
     @Getter
-    private int configVersion;
+    protected int configVersion;
     @Getter
-    private String databaseAddress;
+    protected String databaseAddress;
     @Getter
-    private String databaseName;
+    protected String databaseName;
     @Getter
-    private String databaseUsername;
+    protected String databaseUsername;
     @Getter
-    private String databasePassword;
+    protected String databasePassword;
     @Getter
-    private String databaseType;
+    protected String databaseType;
 
     /**
      * コンストラクタ
      *
      * @param plugin プラグイン
      */
-    public ConfigHandler(Plugin plugin) {
+    public BaseConfigHandler(Plugin plugin) {
         plugin.saveDefaultConfig();
         this.plugin = plugin;
         this.config = plugin.getConfig();
-        this.init();
-    }
 
-    private void init() {
         configVersion = config.getInt("config_version");
 
         String databasePath = "database.";
@@ -48,7 +45,11 @@ public class ConfigHandler {
         databaseName = config.getString(databasePath + "database");
         databaseUsername = config.getString(databasePath + "username");
         databasePassword = config.getString(databasePath + "password");
+
+        this.init();
     }
+
+    abstract protected void init();
 
     /**
      * コンフィグを保存する

@@ -1,4 +1,4 @@
-package utils;
+package tech.inudev.profundus.profundusLib.utils;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;

@@ -1,4 +1,4 @@
-package gui;
+package tech.inudev.profundus.profundusLib.gui;
 
 import lombok.Getter;
 import lombok.Setter;

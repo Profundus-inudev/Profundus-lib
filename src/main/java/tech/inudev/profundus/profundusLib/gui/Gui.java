@@ -1,4 +1,4 @@
-package gui;
+package tech.inudev.profundus.profundusLib.gui;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -17,7 +17,7 @@ import org.geysermc.cumulus.SimpleForm;
 import org.geysermc.cumulus.response.SimpleFormResponse;
 import org.geysermc.floodgate.api.FloodgateApi;
 import org.geysermc.floodgate.api.player.FloodgatePlayer;
-import utils.ItemUtil;
+import tech.inudev.profundus.profundusLib.utils.ItemUtil;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -39,7 +39,7 @@ public class Gui implements Listener {
      * @param x        x座標
      * @param y        y座標
      */
-    record PosMenuItem(MenuItem menuItem, int x, int y) {
+    public record PosMenuItem(MenuItem menuItem, int x, int y) {
     }
 
     @Setter

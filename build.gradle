@@ -1,11 +1,11 @@
 plugins {
-    id "java"
+    id "java-library"
     id "maven-publish"
     id "com.google.cloud.artifactregistry.gradle-plugin" version "2.1.5"
 }
 
-group 'tech.inudev.profundusLib'
-version '0.0.1-SNAPSHOT'
+group 'tech.inudev.profundus'
+version '0.0.1-SNAPSHOT-patch2'
 
 repositories {
     mavenCentral()
