@@ -4,7 +4,7 @@ import lombok.Getter;
 import org.bukkit.plugin.java.JavaPlugin;
 import tech.inudev.profundus.profundusLib.config.BaseConfigHandler;
 
-public abstract class JavaPluginWithConfigHandler extends JavaPlugin {
+public class JavaPluginWithConfigHandler extends JavaPlugin {
     @Getter
     private BaseConfigHandler configHandler;
 }

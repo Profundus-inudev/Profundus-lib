@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'tech.inudev.profundus'
-version '0.0.1-SNAPSHOT-patch2'
+version '0.0.1-SNAPSHOT-patch4'
 
 repositories {
     mavenCentral()

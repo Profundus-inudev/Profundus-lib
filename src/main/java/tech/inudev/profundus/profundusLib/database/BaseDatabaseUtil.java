@@ -92,7 +92,7 @@ public class BaseDatabaseUtil {
  * 確実にconnectedなインスタンスを取得する。
  * @return
  */
-    static Connection getConnection(){
+    static protected Connection getConnection(){
     	try {
 			if (connection == null || connection.isClosed()) {connect();}
     	} catch(SQLException e) {
