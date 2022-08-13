@@ -119,6 +119,7 @@ public class HelpUtil {
      *
      * @param playerUUID ヘルプを開く対象のプレイヤー
      * @param helpType   開くヘルプの種類
+     * @param plugin     実行元のプラグイン
      */
     public static void openHelp(JavaPlugin plugin, UUID playerUUID, HelpType helpType) {
         if (playerUUID == null || helpType == null) {

@@ -20,6 +20,10 @@ public class BaseDatabaseUtil {
 
 	private static JavaPluginWithConfigHandler plugin;
 
+    /**
+     * 初期化処理
+     * @param plugin プラグイン
+     */
 	public static void init(JavaPluginWithConfigHandler plugin) {
         BaseDatabaseUtil.plugin = plugin;
 		BaseConfigHandler configHandler = plugin.getConfigHandler();
@@ -89,8 +93,8 @@ public class BaseDatabaseUtil {
         }
     }
 /**
- * 確実にconnectedなインスタンスを取得する。
- * @return
+ * 確実にconnectedなインスタンスを取得する。接続されていない場合は接続する。
+ * @return 接続済みのConnection
  */
     static protected Connection getConnection(){
     	try {
